@@ -26,8 +26,9 @@ public partial class Beasts : BaseSettingsPlugin<BeastsSettings>
         var prices = await PoeNinja.GetBeastsPrices();
         foreach (var beast in BeastsDatabase.AllBeasts)
         {
-            Settings.BeastPrices[beast.DisplayName] = prices.TryGetValue(beast.DisplayName, out var price) ? price : -1;
+            Settings.BeastPrices[beast.DisplayName] = prices.GetValueOrDefault(beast.DisplayName, -1);
         }
+
         Settings.LastUpdate = DateTime.Now;
     }
 
@@ -38,7 +39,7 @@ public partial class Beasts : BaseSettingsPlugin<BeastsSettings>
 
     public override void EntityAdded(Entity entity)
     {
-        if (entity.Rarity != MonsterRarity.Rare&& entity.Rarity != MonsterRarity.Unique) return;
+        if (entity.Rarity != MonsterRarity.Rare && entity.Rarity != MonsterRarity.Unique) return;
         foreach (var _ in BeastsDatabase.AllBeasts.Where(beast => entity.Metadata == beast.Path))
         {
             _trackedBeasts.Add(entity.Id, entity);
@@ -47,9 +48,7 @@ public partial class Beasts : BaseSettingsPlugin<BeastsSettings>
 
     public override void EntityRemoved(Entity entity)
     {
-        if (_trackedBeasts.ContainsKey(entity.Id))
-        {
-            _trackedBeasts.Remove(entity.Id);
-        }
+        // ContainsKey 本身就被 Remove 包含
+        _trackedBeasts.Remove(entity.Id);
     }
 }

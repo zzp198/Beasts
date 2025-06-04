@@ -21,6 +21,7 @@ public partial class Beasts
 {
     public override void Render()
     {
+        // 被抓立即消失
         if (_trackedBeasts.Count > 0)
         {
             foreach (var kvp in _trackedBeasts.ToList())
@@ -48,7 +49,7 @@ public partial class Beasts
 
             if (!Settings.Beasts.Any(b => b.Path == beast.Path)) continue;
             var pos = GameController.IngameState.Data.ToWorldWithTerrainHeight(trackedBeast.Positioned.GridPosition);
-            Graphics.DrawText(beast.DisplayName, GameController.IngameState.Camera.WorldToScreen(pos), Color.White, FontAlign.Center);
+            Graphics.DrawText(beast.ChineseDisplayName, GameController.IngameState.Camera.WorldToScreen(pos), Color.White, FontAlign.Center);
 
             DrawFilledCircleInWorldPosition(pos, 50, GetSpecialBeastColor(beast.DisplayName));
         }
@@ -72,7 +73,7 @@ public partial class Beasts
             }
             else
             {
-                text = $"{b.DisplayName} {Settings.BeastPrices[beastMetadata.DisplayName].ToString(CultureInfo.InvariantCulture)}c";
+                text = $"{b.ChineseDisplayName} {Settings.BeastPrices[beastMetadata.DisplayName].ToString(CultureInfo.InvariantCulture)}c";
             }
 
             DrawToLargeMiniMapText(beast, text);
@@ -193,7 +194,7 @@ public partial class Beasts
             }
             Graphics.DrawBox(beast.GetClientRect(), new Color(0, 0, 0, 0.5f));
             Graphics.DrawFrame(beast.GetClientRect(), Color.White, 2);
-            Graphics.DrawText(beastMetadata.DisplayName, center, Color.White, FontAlign.Center);
+            Graphics.DrawText(beastMetadata.ChineseDisplayName, center, Color.White, FontAlign.Center);
 
             var text = Settings.BeastPrices[beastMetadata.DisplayName].ToString(CultureInfo.InvariantCulture) + "c";
             var textPos = center + new Vector2(0, 20);
@@ -228,7 +229,7 @@ public partial class Beasts
 
                 ImGui.TableNextColumn();
 
-                ImGui.Text(beastMetadata.DisplayName);
+                ImGui.Text(beastMetadata.ChineseDisplayName);
                 foreach (var craft in beastMetadata.Crafts)
                 {
                     ImGui.Text(craft);
