@@ -1,11 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
 using Beasts.Data;
 using Beasts.ExileCore;
+using ExileCore;
 using ExileCore.PoEMemory.Components;
+using ExileCore.PoEMemory.MemoryObjects;
 using ExileCore.Shared.Enums;
+using ExileCore.Shared.Helpers;
 using ImGuiNET;
 using SharpDX;
 using Vector2 = System.Numerics.Vector2;
@@ -20,6 +24,7 @@ public partial class Beasts
         DrawInGameBeasts();
         DrawBestiaryPanel();
         DrawBeastsWindow();
+        DrawMinimapPrice();
     }
 
     private void DrawInGameBeasts()
@@ -36,6 +41,86 @@ public partial class Beasts
 
             DrawFilledCircleInWorldPosition(pos, 50, GetSpecialBeastColor(beast.DisplayName));
         }
+    }
+
+    private void DrawMinimapPrice()
+    {
+
+        foreach (var beast in _trackedBeasts.Values)
+        {
+            var b = BeastsDatabase.AllBeasts.Find(b => b.Path == beast.Metadata);
+
+            var beastMetadata = Settings.Beasts.Find(b => b.Path == beast.Metadata);
+            if (beastMetadata == null) continue;
+
+            if (!Settings.BeastPrices.ContainsKey(beastMetadata.DisplayName)) continue;
+
+            string text;
+            if (beast.Stats.TryGetValue(GameStat.MovementVelocityPct, out int pct) && pct == -100)
+            {
+                text = "V";
+            }
+            else
+            {
+                text = $"{b.DisplayName} {Settings.BeastPrices[beastMetadata.DisplayName].ToString(CultureInfo.InvariantCulture)}c";
+            }
+
+            DrawToLargeMiniMapText(beast, text);
+        }
+    }
+
+    private void DrawToLargeMiniMapText(Entity entity, string text)
+    {
+        var camera = GameController.Game.IngameState.Camera;
+        var mapWindow = GameController.Game.IngameState.IngameUi.Map;
+        if (GameController.Game.IngameState.UIRoot.Scale == 0)
+        {
+            DebugWindow.LogError(
+                "ExpeditionIcons: Seems like UIRoot.Scale is 0. Icons will not be drawn because of that.");
+        }
+
+        var mapRect = mapWindow.GetClientRect();
+        var playerPos = GameController.Player.GridPosNum;
+        var posZ = GameController.Player.GetComponent<Render>().Z;
+        var screenCenter = new Vector2(mapRect.Width / 2, mapRect.Height / 2).Translate(0, -20) +
+                           new Vector2(mapRect.X, mapRect.Y) +
+                           new Vector2(mapWindow.LargeMapShiftX, mapWindow.LargeMapShiftY);
+        var diag = (float)Math.Sqrt(camera.Width * camera.Width + camera.Height * camera.Height);
+        var k = camera.Width < 1024f ? 1120f : 1024f;
+        var scale = k / camera.Height * camera.Width * 3f / 4f / mapWindow.LargeMapZoom;
+        var render = entity.GetComponent<Render>();
+        if (render is null)
+        {
+            return;
+        }
+        var iconZ = render.Z;
+        var point = screenCenter + DeltaInWorldToMinimapDelta(entity.GridPosNum - playerPos, diag, scale,
+            (iconZ - posZ) / (9f / mapWindow.LargeMapZoom));
+
+
+        var size = Graphics.DrawText(text, point, Color.Green,
+            20, FontAlign.Center);
+        float maxWidth = 0;
+        float maxheight = 0;
+        //not sure about sizes below, need test
+        point.Y += size.Y;
+        maxheight += size.Y;
+        maxWidth = Math.Max(maxWidth, size.X);
+        var background = new RectangleF(point.X - maxWidth / 2 - 3, point.Y - maxheight, maxWidth + 6, maxheight);
+        Graphics.DrawBox(background, Color.Black);
+    }
+
+    public static Vector2 DeltaInWorldToMinimapDelta(Vector2 delta, double diag, float scale, float deltaZ = 0)
+    {
+        const float CAMERA_ANGLE = 38 * MathUtil.Pi / 180;
+
+        // Values according to 40 degree rotation of cartesian coordiantes, still doesn't seem right but closer
+        var cos = (float)(diag * Math.Cos(CAMERA_ANGLE) / scale);
+        var sin = (float)(diag * Math.Sin(CAMERA_ANGLE) /
+                           scale); // possible to use cos so angle = nearly 45 degrees
+
+        // 2D rotation formulas not correct, but it's what appears to work?
+        return new Vector2((delta.X - delta.Y) * cos, deltaZ - (delta.X + delta.Y) * sin);
     }
 
     private Color GetSpecialBeastColor(string beastName)
@@ -72,20 +157,37 @@ public partial class Beasts
         if (capturedBeastsPanel == null || capturedBeastsPanel.IsVisible == false) return;
 
         var beasts = bestiary.CapturedBeastsPanel.CapturedBeasts;
+        var bestiaryTopRight = new Vector2(bestiary.GetClientRect().TopRight.X, bestiary.GetClientRect().TopRight.Y);
+        Graphics.DrawText($"Beasts: {beasts.Count}", bestiaryTopRight, Color.White, FontAlign.Right);
         foreach (var beast in beasts)
         {
+          /*if (!beast.IsVisible)
+            {
+                continue;
+            }*/
             var beastMetadata = Settings.Beasts.Find(b => b.DisplayName == beast.DisplayName);
             if (beastMetadata == null) continue;
             if (!Settings.BeastPrices.ContainsKey(beastMetadata.DisplayName)) continue;
-
+            var beastRect = beast.GetClientRect();
+            if (beastRect.Bottom < 100 || beastRect.Top > GameController.Window.GetWindowRectangle().Height-100)
+            {
+                continue;
+            }
             var center = new Vector2(beast.GetClientRect().Center.X, beast.GetClientRect().Center.Y);
-
+            if (GameController.IngameState.UIHoverTooltip.Address.Equals(beast.Address))
+            {
+                var topRight = new Vector2(beast.GetClientRect().TopRight.X, beast.GetClientRect().TopRight.Y);
+                var size = Graphics.DrawText(string.Join('\n', beastMetadata.Crafts), topRight, Color.White, FontAlign.Left);
+                var background = new RectangleF(topRight.X, topRight.Y, size.X, size.Y);
+                Graphics.DrawBox(background, Color.Black);
+            }
             Graphics.DrawBox(beast.GetClientRect(), new Color(0, 0, 0, 0.5f));
             Graphics.DrawFrame(beast.GetClientRect(), Color.White, 2);
             Graphics.DrawText(beastMetadata.DisplayName, center, Color.White, FontAlign.Center);
 
             var text = Settings.BeastPrices[beastMetadata.DisplayName].ToString(CultureInfo.InvariantCulture) + "c";
             var textPos = center + new Vector2(0, 20);
+            
             Graphics.DrawText(text, textPos, Color.White, FontAlign.Center);
         }
     }
