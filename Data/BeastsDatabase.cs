@@ -8,15 +8,15 @@ public static class BeastsDatabase
     {
         new Beast
         {
-            DisplayName = "活性哨兵",
+            DisplayName = "Vivid Watcher",
             Path = "Metadata/Monsters/LeagueHarvest/Green/HarvestSquidT3MemoryLine_",
-            Crafts = ["重置一颗强化辅助宝石"]
+            Crafts = ["Transform an Item: Reroll an Awakened Support Gem"]
         },
         new Beast
         {
-            DisplayName = "活性匿者",
+            DisplayName = "Vivid Vulture",
             Path = "Metadata/Monsters/LeagueHarvest/Green/HarvestVultureParasiteT3MemoryLine",
-            Crafts = ["重置一个虚空忆境基底词缀"]
+            Crafts = ["Transform an Item: Reroll a Synthesis Implicit Modifier"]
         },
         new Beast
         {
