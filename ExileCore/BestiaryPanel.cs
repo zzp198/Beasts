@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using ExileCore.PoEMemory;
 
@@ -31,6 +31,7 @@ public class CapturedBeastsPanel : Element
                 if (beastContainer == null || beastContainer.IsVisible == false) continue;
 
                 beasts.AddRange(beastContainer.GetChildAtIndex(1).Children
+                    .Where(beast => beast.IsVisible)
                     .Select(beast => GetObject<CapturedBeast>(beast.Address)));
             }
 
@@ -41,5 +42,6 @@ public class CapturedBeastsPanel : Element
 
 public class CapturedBeast : Element
 {
-    public string DisplayName => Tooltip?.GetChildAtIndex(1)?.GetChildAtIndex(0).Text.Replace("-", "").Trim();
+    public string DisplayName => IsBlackMorrigan? "Black Mórrigan" : Tooltip?.GetChildAtIndex(1)?.GetChildAtIndex(0).Text.Replace("-", "").Trim();
+    public bool IsBlackMorrigan => Children[1].Children[0].Text.Equals("Black Mórrigan");
 }
