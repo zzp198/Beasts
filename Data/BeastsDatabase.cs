@@ -8,43 +8,48 @@ public static class BeastsDatabase
     {
         new Beast
         {
-            DisplayName = "活性哨兵",
+            DisplayName = "Vivid Watcher",
+            ChineseDisplayName = "活性哨兵",
             Path = "Metadata/Monsters/LeagueHarvest/Green/HarvestSquidT3MemoryLine_",
-            Crafts = 
+            Crafts =
             [
                 "变换物品: 重置一颗强化辅助宝石"
             ]
         },
         new Beast
         {
-            DisplayName = "活性匿者",
+            DisplayName = "Vivid Vulture",
+            ChineseDisplayName = "活性匿者",
             Path = "Metadata/Monsters/LeagueHarvest/Green/HarvestVultureParasiteT3MemoryLine",
-            Crafts = 
+            Crafts =
             [
                 "变换物品: 重置一个虚空忆境基底词缀"
             ]
         },
         new Beast
         {
-            DisplayName = "活性纺纱",
+            DisplayName = "Vivid Abberarach",
+            ChineseDisplayName = "活性纺纱",
             Path = "Metadata/Monsters/LeagueHarvest/Green/HarvestPlatedScorpionT3MemoryLine",
-            Crafts = 
+            Crafts =
             [
                 "创造一个物品: 塑界守卫、裂界守卫或征服者地图"
             ]
         },
         new Beast
         {
-            DisplayName = "荒野荆背",
+            DisplayName = "Wild Brambleback",
+            ChineseDisplayName = "荒野荆背",
             Path = "Metadata/Monsters/LeagueHarvest/Red/HarvestBrambleHulkT3MemoryLine",
-            Crafts = 
+            Crafts =
             [
                 "变换物品: 将未腐化的觉醒宝石提升1级"
             ]
         },
         new Beast
         {
-            DisplayName = "荒野头狼",
+            DisplayName = "Wild Hellion Alpha",
+            ChineseDisplayName = "荒野头狼",
             Path = "Metadata/Monsters/LeagueHarvest/Red/HarvestHellionT3MemoryLine",
             Crafts =
             [
@@ -53,7 +58,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "荒野母兽",
+            DisplayName = "Wild Bristle Matron",
+            ChineseDisplayName = "荒野母兽",
             Path = "Metadata/Monsters/LeagueHarvest/Red/HarvestBeastT3MemoryLine_",
             Crafts =
             [
@@ -62,7 +68,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "原始利爪",
+            DisplayName = "Primal Crushclaw",
+            ChineseDisplayName = "原始利爪",
             Path = "Metadata/Monsters/LeagueHarvest/Blue/HarvestNessaCrabT3MemoryLine_",
             Crafts =
             [
@@ -71,7 +78,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "原始囊行",
+            DisplayName = "Primal Cystcaller",
+            ChineseDisplayName = "原始囊行",
             Path = "Metadata/Monsters/LeagueHarvest/Blue/HarvestGoatmanT3MemoryLine",
             Crafts =
             [
@@ -80,7 +88,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "原始鸟母",
+            DisplayName = "Primal Rhex Matriarch",
+            ChineseDisplayName = "原始鸟母",
             Path = "Metadata/Monsters/LeagueHarvest/Blue/HarvestRhexT3MemoryLine",
             Crafts =
             [
@@ -89,27 +98,30 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "黑羽之莫丽根",
+            DisplayName = "Black Mórrigan",
+            ChineseDisplayName = "黑羽之莫丽根",
             Path = "Metadata/Monsters/LeagueAzmeri/GullGoliathBestiary_",
             Crafts =
             [
-                "高级融合素材！",
-                "高级融合素材！",
-                "高级融合素材！"
+                "高级融合素材!",
+                "高级融合素材!",
+                "高级融合素材!"
             ]
         },
         new Beast
         {
-            DisplayName = "活性匿者",
+            DisplayName = "Vivid Vulture",
+            ChineseDisplayName = "活性匿者",
             Path = "Metadata/Monsters/LeagueHarvest/Green/HarvestVultureParasiteT3",
-            Crafts = 
+            Crafts =
             [
                 "变换物品: 重置一个虚空忆境基底词缀"
             ]
         },
         new Beast
         {
-            DisplayName = "深海奇美拉",
+            DisplayName = "Craicic Chimeral",
+            ChineseDisplayName = "深海奇美拉",
             Path = "Metadata/Monsters/LeagueBestiary/GemFrogBestiary",
             Crafts =
             [
@@ -118,7 +130,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "荒野头狼",
+            DisplayName = "Wild Hellion Alpha",
+            ChineseDisplayName = "荒野头狼",
             Path = "Metadata/Monsters/LeagueHarvest/Red/HarvestHellionT3",
             Crafts =
             [
@@ -127,7 +140,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "荒野母兽",
+            DisplayName = "Wild Bristle Matron",
+            ChineseDisplayName = "荒野母兽",
             Path = "Metadata/Monsters/LeagueHarvest/Red/HarvestBeastT3",
             Crafts =
             [
@@ -136,7 +150,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "暗夜初子 费努姆斯",
+            DisplayName = "Fenumus, First of the Night",
+            ChineseDisplayName = "暗夜初子 费努姆斯",
             Path = "Metadata/Monsters/LeagueBestiary/SpiderPlatedBestiarySpiritBoss",
             Crafts =
             [
@@ -145,7 +160,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "活性哨兵",
+            DisplayName = "Vivid Watcher",
+            ChineseDisplayName = "活性哨兵",
             Path = "Metadata/Monsters/LeagueHarvest/Green/HarvestSquidT3_",
             Crafts =
             [
@@ -154,7 +170,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "大地初子 法瑞尔",
+            DisplayName = "Farrul, First of the Plains",
+            ChineseDisplayName = "大地初子 法瑞尔",
             Path = "Metadata/Monsters/LeagueBestiary/TigerBestiarySpiritBoss",
             Crafts =
             [
@@ -163,7 +180,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "苍空初子 萨奇沃",
+            DisplayName = "Saqawal, First of the Sky",
+            ChineseDisplayName = "苍空初子 萨奇沃",
             Path = "Metadata/Monsters/LeagueBestiary/MarakethBirdSpiritBoss",
             Crafts =
             [
@@ -172,7 +190,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "大地冰霜地狱巨犬",
+            DisplayName = "Farric Frost Hellion Alpha",
+            ChineseDisplayName = "大地冰霜地狱巨犬",
             Path = "Metadata/Monsters/LeagueBestiary/HellionBestiary2",
             Crafts =
             [
@@ -182,7 +201,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "深海初子 克林斯昂",
+            DisplayName = "Craiceann, First of the Deep",
+            ChineseDisplayName = "深海初子 克林斯昂",
             Path = "Metadata/Monsters/LeagueBestiary/NessaCrabBestiarySpiritBoss",
             Crafts =
             [
@@ -191,7 +211,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "荒野荆背",
+            DisplayName = "Wild Brambleback",
+            ChineseDisplayName = "荒野荆背",
             Path = "Metadata/Monsters/LeagueHarvest/Red/HarvestBrambleHulkT3",
             Crafts =
             [
@@ -200,7 +221,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "原始鸟母",
+            DisplayName = "Primal Rhex Matriarch",
+            ChineseDisplayName = "原始鸟母",
             Path = "Metadata/Monsters/LeagueHarvest/Blue/HarvestRhexT3",
             Crafts =
             [
@@ -209,7 +231,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "大地巨虎",
+            DisplayName = "Farric Tiger Alpha",
+            ChineseDisplayName = "大地巨虎",
             Path = "Metadata/Monsters/LeagueBestiary/TigerBestiary",
             Crafts =
             [
@@ -218,7 +241,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "暗夜异蛛",
+            DisplayName = "Fenumal Plagued Arachnid",
+            ChineseDisplayName = "暗夜异蛛",
             Path = "Metadata/Monsters/LeagueBestiary/SpiderPlagueBestiary",
             Crafts =
             [
@@ -227,7 +251,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "暗夜混毒魔蛛",
+            DisplayName = "Fenumal Hybrid Arachnid",
+            ChineseDisplayName = "暗夜混毒魔蛛",
             Path = "Metadata/Monsters/LeagueBestiary/SpiderPlatedBestiary",
             Crafts =
             [
@@ -236,7 +261,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "苍空凶鸟",
+            DisplayName = "Saqawine Rhex",
+            ChineseDisplayName = "苍空凶鸟",
             Path = "Metadata/Monsters/LeagueBestiary/Avians/MarakethBirdBestiary",
             Crafts =
             [
@@ -245,7 +271,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "大地巨狼",
+            DisplayName = "Farric Wolf Alpha",
+            ChineseDisplayName = "大地巨狼",
             Path = "Metadata/Monsters/LeagueBestiary/WolfBestiary",
             Crafts =
             [
@@ -254,7 +281,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "深海蜘蛛蟹",
+            DisplayName = "Craicic Spider Crab",
+            ChineseDisplayName = "深海蜘蛛蟹",
             Path = "Metadata/Monsters/LeagueBestiary/CrabSpiderBestiary",
             Crafts =
             [
@@ -263,7 +291,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "原始利爪",
+            DisplayName = "Primal Crushclaw",
+            ChineseDisplayName = "原始利爪",
             Path = "Metadata/Monsters/LeagueHarvest/Blue/HarvestNessaCrabT3",
             Crafts =
             [
@@ -273,6 +302,7 @@ public static class BeastsDatabase
         new Beast
         {
             DisplayName = "Craicic Vassal",
+            ChineseDisplayName = "深海寄生者",
             Path = "Metadata/Monsters/LeagueBestiary/ParasiticSquidBestiary",
             Crafts =
             [
@@ -282,7 +312,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "活性纺纱",
+            DisplayName = "Vivid Abberarach",
+            ChineseDisplayName = "活性纺纱",
             Path = "Metadata/Monsters/LeagueHarvest/Green/HarvestPlatedScorpionT3",
             Crafts =
             [
@@ -291,7 +322,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "大地巨型猞猁",
+            DisplayName = "Farric Lynx Alpha",
+            ChineseDisplayName = "大地巨型猞猁",
             Path = "Metadata/Monsters/LeagueBestiary/LynxBestiary",
             Crafts =
             [
@@ -300,7 +332,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "深海裂齿兽",
+            DisplayName = "Craicic Maw",
+            ChineseDisplayName = "深海裂齿兽",
             Path = "Metadata/Monsters/LeagueBestiary/FrogBestiary",
             Crafts =
             [
@@ -314,7 +347,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "大地巨猿",
+            DisplayName = "Farric Ape",
+            ChineseDisplayName = "大地巨猿",
             Path = "Metadata/Monsters/LeagueBestiary/MonkeyBloodBestiary",
             Crafts =
             [
@@ -323,7 +357,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "原始囊行",
+            DisplayName = "Primal Cystcaller",
+            ChineseDisplayName = "原始囊行",
             Path = "Metadata/Monsters/LeagueHarvest/Blue/HarvestGoatmanT3",
             Crafts =
             [
@@ -332,7 +367,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "深海野蛮巨蟹",
+            DisplayName = "Craicic Savage Crab",
+            ChineseDisplayName = "深海野蛮巨蟹",
             Path = "Metadata/Monsters/LeagueBestiary/CrabParasiteLargeBestiary_",
             Crafts =
             [
@@ -342,7 +378,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "苍空秃鹰",
+            DisplayName = "Saqawine Vulture",
+            ChineseDisplayName = "苍空秃鹰",
             Path = "Metadata/Monsters/LeagueBestiary/VultureBestiary",
             Crafts =
             [
@@ -351,7 +388,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "苍空眼镜蛇",
+            DisplayName = "Saqawine Cobra",
+            ChineseDisplayName = "苍空眼镜蛇",
             Path = "Metadata/Monsters/LeagueBestiary/SnakeBestiary1",
             Crafts =
             [
@@ -361,7 +399,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "大地深邃猎犬",
+            DisplayName = "Farric Pit Hound",
+            ChineseDisplayName = "大地深邃猎犬",
             Path = "Metadata/Monsters/LeagueBestiary/PitbullBestiary",
             Crafts =
             [
@@ -370,7 +409,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "大地巨熊",
+            DisplayName = "Farric Ursa",
+            ChineseDisplayName = "大地巨熊",
             Path = "Metadata/Monsters/LeagueBestiary/DropBearBestiary",
             Crafts =
             [
@@ -379,8 +419,9 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "暗夜女王",
-            Path = "Create a Unique: Staff",
+            DisplayName = "Fenumal Queen",
+            ChineseDisplayName = "暗夜女王",
+            Path = "Metadata/Monsters/LeagueBestiary/InsectSpawnerBestiary",
             Crafts =
             [
                 "制作一个传奇: 长杖",
@@ -389,7 +430,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "大地针背兽",
+            DisplayName = "Farric Goliath",
+            ChineseDisplayName = "大地针背兽",
             Path = "Metadata/Monsters/LeagueBestiary/BestiarySpiker",
             Crafts =
             [
@@ -399,7 +441,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "暗夜吞噬者",
+            DisplayName = "Fenumal Devourer",
+            ChineseDisplayName = "暗夜吞噬者",
             Path = "Metadata/Monsters/LeagueBestiary/RootSpiderBestiary_",
             Crafts =
             [
@@ -409,7 +452,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "深海守望者",
+            DisplayName = "Craicic Watcher",
+            ChineseDisplayName = "深海守望者",
             Path = "Metadata/Monsters/LeagueBestiary/SquidBestiary",
             Crafts =
             [
@@ -419,7 +463,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "苍空奇美拉",
+            DisplayName = "Saqawine Chimeral",
+            ChineseDisplayName = "苍空奇美拉",
             Path = "Metadata/Monsters/LeagueBestiary/IguanaBestiary",
             Crafts =
             [
@@ -428,7 +473,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "大地熔岩猎犬",
+            DisplayName = "Farric Magma Hound",
+            ChineseDisplayName = "大地熔岩猎犬",
             Path = "Metadata/Monsters/LeagueBestiary/HoundBestiary",
             Crafts =
             [
@@ -437,7 +483,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "大地石肌牛",
+            DisplayName = "Farric Taurus",
+            ChineseDisplayName = "大地石肌牛",
             Path = "Metadata/Monsters/LeagueBestiary/BestiaryBull",
             Crafts =
             [
@@ -446,7 +493,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "深海墨鱼",
+            DisplayName = "Craicic Squid",
+            ChineseDisplayName = "深海墨鱼",
             Path = "Metadata/Monsters/LeagueBestiary/SeaWitchSpawnBestiary",
             Crafts =
             [
@@ -455,7 +503,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "深海附壳巨蟹",
+            DisplayName = "Craicic Shield Crab",
+            ChineseDisplayName = "深海附壳巨蟹",
             Path = "Metadata/Monsters/LeagueBestiary/ShieldCrabBestiary",
             Crafts =
             [
@@ -466,7 +515,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "深海喷砂爪蟹",
+            DisplayName = "Craicic Sand Spitter",
+            ChineseDisplayName = "深海喷砂爪蟹",
             Path = "Metadata/Monsters/LeagueBestiary/SandSpitterBestiary",
             Crafts =
             [
@@ -477,7 +527,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "暗夜黑寡妇",
+            DisplayName = "Fenumal Widow",
+            ChineseDisplayName = "暗夜黑寡妇",
             Path = "Metadata/Monsters/LeagueBestiary/Spider5Bestiary",
             Crafts =
             [
@@ -486,7 +537,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "苍空恐喙鸟",
+            DisplayName = "Saqawine Rhoa",
+            ChineseDisplayName = "苍空恐喙鸟",
             Path = "Metadata/Monsters/LeagueBestiary/RhoaBestiary",
             Crafts =
             [
@@ -495,7 +547,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "暗夜毒蝎",
+            DisplayName = "Fenumal Scorpion",
+            ChineseDisplayName = "暗夜毒蝎",
             Path = "Metadata/Monsters/LeagueBestiary/BlackScorpionBestiary",
             Crafts =
             [
@@ -505,7 +558,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "大地烈炎地狱巨犬",
+            DisplayName = "Farric Flame Hellion Alpha",
+            ChineseDisplayName = "大地烈炎地狱巨犬",
             Path = "Metadata/Monsters/LeagueBestiary/HellionBestiary",
             Crafts =
             [
@@ -514,7 +568,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "大地酋长",
+            DisplayName = "Farric Chieftain",
+            ChineseDisplayName = "大地酋长",
             Path = "Metadata/Monsters/LeagueBestiary/BestiaryMonkeyChiefBlood",
             Crafts =
             [
@@ -523,7 +578,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "苍空反刍鸟",
+            DisplayName = "Saqawine Retch",
+            ChineseDisplayName = "苍空反刍鸟",
             Path = "Metadata/Monsters/LeagueBestiary/KiwethBestiary",
             Crafts =
             [
@@ -532,7 +588,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "大地羊人",
+            DisplayName = "Farric Goatman",
+            ChineseDisplayName = "大地羊人",
             Path = "Metadata/Monsters/LeagueBestiary/GoatmanLeapSlamBestiary",
             Crafts =
             [
@@ -541,7 +598,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "苍空毒血蛇",
+            DisplayName = "Saqawine Blood Viper",
+            ChineseDisplayName = "苍空毒血蛇",
             Path = "Metadata/Monsters/LeagueBestiary/SnakeBestiary2",
             Crafts =
             [
@@ -551,7 +609,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "暗夜收割者",
+            DisplayName = "Fenumal Scrabbler",
+            ChineseDisplayName = "暗夜收割者",
             Path = "Metadata/Monsters/LeagueBestiary/SandLeaperBestiary",
             Crafts =
             [
@@ -561,7 +620,8 @@ public static class BeastsDatabase
         },
         new Beast
         {
-            DisplayName = "大地野兽",
+            DisplayName = "Farric Gargantuan",
+            ChineseDisplayName = "大地野兽",
             Path = "Metadata/Monsters/LeagueBestiary/BeastCaveBestiary",
             Crafts =
             [
