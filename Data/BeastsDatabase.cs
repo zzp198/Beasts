@@ -246,7 +246,7 @@ public static class BeastsDatabase
             Path = "Metadata/Monsters/LeagueBestiary/SpiderPlagueBestiary",
             Crafts =
             [
-                "分割一个物品: 为两个物品，每个物品拥有一半词缀"
+                "分裂一个物品: 为两个物品,每个物品拥有一半词缀"
             ]
         },
         new Beast
@@ -276,7 +276,7 @@ public static class BeastsDatabase
             Path = "Metadata/Monsters/LeagueBestiary/WolfBestiary",
             Crafts =
             [
-                "修改物品上的词缀: 添加一个前缀，去除一个随机后缀"
+                "修改物品上的词缀: 添加一个前缀,去除一个随机后缀"
             ]
         },
         new Beast
@@ -327,7 +327,7 @@ public static class BeastsDatabase
             Path = "Metadata/Monsters/LeagueBestiary/LynxBestiary",
             Crafts =
             [
-                "修改物品上的词缀: 添加一个后缀，去除一个随机前缀"
+                "修改物品上的词缀: 添加一个后缀,去除一个随机前缀"
             ]
         },
         new Beast
