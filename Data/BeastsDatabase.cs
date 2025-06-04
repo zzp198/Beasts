@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 
 namespace Beasts.Data;
 
@@ -10,25 +10,34 @@ public static class BeastsDatabase
         {
             DisplayName = "Vivid Watcher",
             Path = "Metadata/Monsters/LeagueHarvest/Green/HarvestSquidT3MemoryLine_",
-            Crafts = ["Transform an Item: Reroll an Awakened Support Gem"]
+            Crafts = 
+            [
+                "Transform an Item: Reroll an Awakened Support Gem"
+            ]
         },
         new Beast
         {
             DisplayName = "Vivid Vulture",
             Path = "Metadata/Monsters/LeagueHarvest/Green/HarvestVultureParasiteT3MemoryLine",
-            Crafts = ["Transform an Item: Reroll a Synthesis Implicit Modifier"]
+            Crafts = 
+            [
+                "Transform an Item: Reroll a Synthesis Implicit Modifier"
+            ]
         },
         new Beast
         {
             DisplayName = "Vivid Abberarach",
             Path = "Metadata/Monsters/LeagueHarvest/Green/HarvestPlatedScorpionT3MemoryLine",
-            Crafts = ["Create an Item: Shaper Guardian, Elder Guardian or Conqueror Map"]
+            Crafts = 
+            [
+                "Create an Item: Shaper Guardian, Elder Guardian or Conqueror Map"
+            ]
         },
         new Beast
         {
             DisplayName = "Wild Brambleback",
             Path = "Metadata/Monsters/LeagueHarvest/Red/HarvestBrambleHulkT3MemoryLine",
-            Crafts =
+            Crafts = 
             [
                 "Transform an Item: Increase level of non-Corrupted Awakened Gem by 1"
             ]
@@ -98,7 +107,10 @@ public static class BeastsDatabase
         {
             DisplayName = "Vivid Vulture",
             Path = "Metadata/Monsters/LeagueHarvest/Green/HarvestVultureParasiteT3",
-            Crafts = ["Transform an Item: Reroll a Synthesis Implicit Modifier"]
+            Crafts = 
+            [
+                "Transform an Item: Reroll a Synthesis Implicit Modifier"
+            ]
         },
         new Beast
         {
@@ -560,5 +572,4 @@ public static class BeastsDatabase
             ]
         }
     };
-
 }
