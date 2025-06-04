@@ -91,7 +91,7 @@ public class BeastsSettings : ISettings
                         ImGui.Text(BeastPrices.TryGetValue(beast.DisplayName, out var price) ? $"{price}c" : "0c");
 
                         ImGui.TableNextColumn();
-                        ImGui.Text(beast.DisplayName);
+                        ImGui.Text(beast.ChineseDisplayName);
 
                         ImGui.TableNextColumn();
                         // display all the crafts for the beast seperated by newline
