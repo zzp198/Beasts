@@ -38,7 +38,7 @@ public partial class Beasts : BaseSettingsPlugin<BeastsSettings>
 
     public override void EntityAdded(Entity entity)
     {
-        if (entity.Rarity != MonsterRarity.Rare) return;
+        if (entity.Rarity != MonsterRarity.Rare&& entity.Rarity != MonsterRarity.Unique) return;
         foreach (var _ in BeastsDatabase.AllBeasts.Where(beast => entity.Metadata == beast.Path))
         {
             _trackedBeasts.Add(entity.Id, entity);
