@@ -21,10 +21,21 @@ public partial class Beasts
 {
     public override void Render()
     {
+        if (_trackedBeasts.Count > 0)
+        {
+            foreach (var kvp in _trackedBeasts.ToList())
+            {
+                if (kvp.Value.Stats.TryGetValue(GameStat.MovementVelocityPct, out int pct) && pct == -100)
+                {
+                    _trackedBeasts.Remove(kvp.Key);
+                }
+            }
+        }
+        
         DrawInGameBeasts();
         DrawBestiaryPanel();
         DrawBeastsWindow();
-        DrawMinimapPrice();
+        // DrawMinimapPrice();
     }
 
     private void DrawInGameBeasts()
@@ -45,7 +56,6 @@ public partial class Beasts
 
     private void DrawMinimapPrice()
     {
-
         foreach (var beast in _trackedBeasts.Values)
         {
             var b = BeastsDatabase.AllBeasts.Find(b => b.Path == beast.Metadata);
