@@ -8,271 +8,266 @@ public static class BeastsDatabase
     {
         new Beast
         {
-            DisplayName = "Vivid Watcher",
+            DisplayName = "活性哨兵",
             Path = "Metadata/Monsters/LeagueHarvest/Green/HarvestSquidT3MemoryLine_",
             Crafts = 
             [
-                "Transform an Item: Reroll an Awakened Support Gem"
+                "变换物品: 重置一颗强化辅助宝石"
             ]
         },
         new Beast
         {
-            DisplayName = "Vivid Vulture",
+            DisplayName = "活性匿者",
             Path = "Metadata/Monsters/LeagueHarvest/Green/HarvestVultureParasiteT3MemoryLine",
             Crafts = 
             [
-                "Transform an Item: Reroll a Synthesis Implicit Modifier"
+                "变换物品: 重置一个虚空忆境基底词缀"
             ]
         },
         new Beast
         {
-            DisplayName = "Vivid Abberarach",
+            DisplayName = "活性纺纱",
             Path = "Metadata/Monsters/LeagueHarvest/Green/HarvestPlatedScorpionT3MemoryLine",
             Crafts = 
             [
-                "Create an Item: Shaper Guardian, Elder Guardian or Conqueror Map"
+                "创造一个物品: 塑界守卫、裂界守卫或征服者地图"
             ]
         },
         new Beast
         {
-            DisplayName = "Wild Brambleback",
+            DisplayName = "荒野荆背",
             Path = "Metadata/Monsters/LeagueHarvest/Red/HarvestBrambleHulkT3MemoryLine",
             Crafts = 
             [
-                "Transform an Item: Increase level of non-Corrupted Awakened Gem by 1"
+                "变换物品: 将未腐化的觉醒宝石提升1级"
             ]
         },
         new Beast
         {
-            DisplayName = "Wild Hellion Alpha",
+            DisplayName = "荒野头狼",
             Path = "Metadata/Monsters/LeagueHarvest/Red/HarvestHellionT3MemoryLine",
             Crafts =
             [
-                "Modify Mods on an Item: Reroll a Watcher's Eye Modifier"
+                "修改物品上的词缀: 重置一个守望之眼的词缀"
             ]
         },
         new Beast
         {
-            DisplayName = "Wild Bristle Matron",
+            DisplayName = "荒野母兽",
             Path = "Metadata/Monsters/LeagueHarvest/Red/HarvestBeastT3MemoryLine_",
             Crafts =
             [
-                "Modify Mods on an Item: Add a crafted Meta-modifier to a non-Unique Item"
+                "修改物品上的词缀: 在一个非传奇物品上添加制作完成的词缀"
             ]
         },
         new Beast
         {
-            DisplayName = "Primal Crushclaw",
+            DisplayName = "原始利爪",
             Path = "Metadata/Monsters/LeagueHarvest/Blue/HarvestNessaCrabT3MemoryLine_",
             Crafts =
             [
-                "Gain Atlas Crafts: Gain a free use of each Map Crafting Option"
+                "获得舆图工艺: 免费使用一次所有地图工艺选项"
             ]
         },
         new Beast
         {
-            DisplayName = "Primal Cystcaller",
+            DisplayName = "原始囊行",
             Path = "Metadata/Monsters/LeagueHarvest/Blue/HarvestGoatmanT3MemoryLine",
             Crafts =
             [
-                "Gain Atlas Crafts: Gain one of each Atlas Mission"
+                "获得舆图工艺: 获取 5 个奇拉克任务"
             ]
         },
         new Beast
         {
-            DisplayName = "Primal Rhex Matriarch",
+            DisplayName = "原始鸟母",
             Path = "Metadata/Monsters/LeagueHarvest/Blue/HarvestRhexT3MemoryLine",
             Crafts =
             [
-                "Create an Item: Synthesis Unique Map"
+                "创造一个物品: 虚空忆境传奇地图"
             ]
         },
         new Beast
         {
-            DisplayName = "Black Mórrigan",
+            DisplayName = "黑羽之莫丽根",
             Path = "Metadata/Monsters/LeagueAzmeri/GullGoliathBestiary_",
             Crafts =
             [
-                "Craft an Aspect Skill onto an Item: Level 30 Aspect of the Cat skill",
-                "Craft an Aspect Skill onto an Item: Level 30 Aspect of the Avian skill",
-                "Craft an Aspect Skill onto an Item: Level 30 Aspect of the Spider skill",
-                "Craft an Aspect Skill onto an Item: Level 30 Aspect of the Crab skill",
-                "Apply a Hinekora's Lock: To a Magic Item",
-                "Split an Item: Into Three Items, with Two Mods on Each Item - Does not work on Influenced or Split items",
-                "Modify an Item: to Have Maximum Possible Links",
-                "Modify an Item: to Have Maximum Possible Number of Sockets",
+                "高级融合素材！",
+                "高级融合素材！",
+                "高级融合素材！"
             ]
         },
         new Beast
         {
-            DisplayName = "Vivid Vulture",
+            DisplayName = "活性匿者",
             Path = "Metadata/Monsters/LeagueHarvest/Green/HarvestVultureParasiteT3",
             Crafts = 
             [
-                "Transform an Item: Reroll a Synthesis Implicit Modifier"
+                "变换物品: 重置一个虚空忆境基底词缀"
             ]
         },
         new Beast
         {
-            DisplayName = "Craicic Chimeral",
+            DisplayName = "深海奇美拉",
             Path = "Metadata/Monsters/LeagueBestiary/GemFrogBestiary",
             Crafts =
             [
-                "Create an Imprint: Of a Magic Item"
+                "创造一个印记: 一个魔法物品的"
             ]
         },
         new Beast
         {
-            DisplayName = "Wild Hellion Alpha",
+            DisplayName = "荒野头狼",
             Path = "Metadata/Monsters/LeagueHarvest/Red/HarvestHellionT3",
             Crafts =
             [
-                "Modify Mods on an Item: Reroll a Watcher's Eye Modifier"
+                "修改物品上的词缀: 重置一个守望之眼的词缀"
             ]
         },
         new Beast
         {
-            DisplayName = "Wild Bristle Matron",
+            DisplayName = "荒野母兽",
             Path = "Metadata/Monsters/LeagueHarvest/Red/HarvestBeastT3",
             Crafts =
             [
-                "Modify Mods on an Item: Add a crafted Meta-modifier to a non-Unique Item"
+                "修改物品上的词缀: 在一个非传奇物品上添加制作完成的词缀"
             ]
         },
         new Beast
         {
-            DisplayName = "Fenumus, First of the Night",
+            DisplayName = "暗夜初子 费努姆斯",
             Path = "Metadata/Monsters/LeagueBestiary/SpiderPlatedBestiarySpiritBoss",
             Crafts =
             [
-                "Craft an Aspect Skill onto an Item: Aspect of the Spider skill"
+                "给物品加上一个势类技能: 蛛之势技能"
             ]
         },
         new Beast
         {
-            DisplayName = "Vivid Watcher",
+            DisplayName = "活性哨兵",
             Path = "Metadata/Monsters/LeagueHarvest/Green/HarvestSquidT3_",
             Crafts =
             [
-                "Transform an Item: Reroll an Awakened Support Gem"
+                "变换物品: 重置一颗强化辅助宝石"
             ]
         },
         new Beast
         {
-            DisplayName = "Farrul, First of the Plains",
+            DisplayName = "大地初子 法瑞尔",
             Path = "Metadata/Monsters/LeagueBestiary/TigerBestiarySpiritBoss",
             Crafts =
             [
-                "Craft an Aspect Skill onto an Item: Aspect of the Cat skill"
+                "给物品加上一个势类技能: 猫之势技能"
             ]
         },
         new Beast
         {
-            DisplayName = "Saqawal, First of the Sky",
+            DisplayName = "苍空初子 萨奇沃",
             Path = "Metadata/Monsters/LeagueBestiary/MarakethBirdSpiritBoss",
             Crafts =
             [
-                "Craft an Aspect Skill onto an Item: Aspect of the Avian skill"
+                "给物品加上一个势类技能: 鸟之势技能"
             ]
         },
         new Beast
         {
-            DisplayName = "Farric Frost Hellion Alpha",
+            DisplayName = "大地冰霜地狱巨犬",
             Path = "Metadata/Monsters/LeagueBestiary/HellionBestiary2",
             Crafts =
             [
-                "Create Currency Items: A Stack of 3 Orbs of Horizons",
-                "Transform an Item: From a Gilded Scarab to a Winged Scarab"
+                "创造通货物品: 一叠三件装平行石",
+                "变换物品: 从护身符变为魔符"
             ]
         },
         new Beast
         {
-            DisplayName = "Craiceann, First of the Deep",
+            DisplayName = "深海初子 克林斯昂",
             Path = "Metadata/Monsters/LeagueBestiary/NessaCrabBestiarySpiritBoss",
             Crafts =
             [
-                "Craft an Aspect Skill onto an Item: Aspect of the Crab skill"
+                "给物品加上一个势类技能: 蟹之势技能"
             ]
         },
         new Beast
         {
-            DisplayName = "Wild Brambleback",
+            DisplayName = "荒野荆背",
             Path = "Metadata/Monsters/LeagueHarvest/Red/HarvestBrambleHulkT3",
             Crafts =
             [
-                "Transform an Item: Increase level of non-Corrupted Awakened Gem by 1"
+                "变换物品: 将未腐化的觉醒宝石提升1级"
             ]
         },
         new Beast
         {
-            DisplayName = "Primal Rhex Matriarch",
+            DisplayName = "原始鸟母",
             Path = "Metadata/Monsters/LeagueHarvest/Blue/HarvestRhexT3",
             Crafts =
             [
-                "Create an Item: Synthesis Unique Map"
+                "创造一个物品: 虚空忆境传奇地图"
             ]
         },
         new Beast
         {
-            DisplayName = "Farric Tiger Alpha",
+            DisplayName = "大地巨虎",
             Path = "Metadata/Monsters/LeagueBestiary/TigerBestiary",
             Crafts =
             [
-                "Open a Portal: to Farrul's Den"
+                "开启一个传送门: 去往法瑞尔的巢穴"
             ]
         },
         new Beast
         {
-            DisplayName = "Fenumal Plagued Arachnid",
+            DisplayName = "暗夜异蛛",
             Path = "Metadata/Monsters/LeagueBestiary/SpiderPlagueBestiary",
             Crafts =
             [
-                "Split an Item Into Two: With Half the Mods on Each Item"
+                "分割一个物品: 为两个物品，每个物品拥有一半词缀"
             ]
         },
         new Beast
         {
-            DisplayName = "Fenumal Hybrid Arachnid",
+            DisplayName = "暗夜混毒魔蛛",
             Path = "Metadata/Monsters/LeagueBestiary/SpiderPlatedBestiary",
             Crafts =
             [
-                "Open a Portal: to Fenumus' Lair"
+                "开启一个传送门: 去往费努姆斯的巢穴"
             ]
         },
         new Beast
         {
-            DisplayName = "Saqawine Rhex",
+            DisplayName = "苍空凶鸟",
             Path = "Metadata/Monsters/LeagueBestiary/Avians/MarakethBirdBestiary",
             Crafts =
             [
-                "Open a Portal: to Saqawal's Roost"
+                "开启一个传送门: 去往萨奇沃的栖地"
             ]
         },
         new Beast
         {
-            DisplayName = "Farric Wolf Alpha",
+            DisplayName = "大地巨狼",
             Path = "Metadata/Monsters/LeagueBestiary/WolfBestiary",
             Crafts =
             [
-                "Modify Mods on an Item: Add a Prefix, Remove a Random Suffix"
+                "修改物品上的词缀: 添加一个前缀，去除一个随机后缀"
             ]
         },
         new Beast
         {
-            DisplayName = "Craicic Spider Crab",
+            DisplayName = "深海蜘蛛蟹",
             Path = "Metadata/Monsters/LeagueBestiary/CrabSpiderBestiary",
             Crafts =
             [
-                "Open a Portal: to Craiceann's Cove"
+                "开启一个传送门: 去往克林斯昂的湾谷"
             ]
         },
         new Beast
         {
-            DisplayName = "Primal Crushclaw",
+            DisplayName = "原始利爪",
             Path = "Metadata/Monsters/LeagueHarvest/Blue/HarvestNessaCrabT3",
             Crafts =
             [
-                "Gain Atlas Crafts: Gain a free use of each Map Crafting Option"
+                "获得舆图工艺: 免费使用一次所有地图工艺选项"
             ]
         },
         new Beast
@@ -281,294 +276,297 @@ public static class BeastsDatabase
             Path = "Metadata/Monsters/LeagueBestiary/ParasiticSquidBestiary",
             Crafts =
             [
-                "Corrupt an Item: To have 30% Quality",
-                "Corrupt an Item: Double Corrupt a Map"
+                "腐化一张地图: 拥有30%基础品质",
+                "腐化一张地图: 两次"
             ]
         },
         new Beast
         {
-            DisplayName = "Vivid Abberarach",
+            DisplayName = "活性纺纱",
             Path = "Metadata/Monsters/LeagueHarvest/Green/HarvestPlatedScorpionT3",
             Crafts =
             [
-                "Create an Item: Shaper Guardian, Elder Guardian or Conqueror Map"
+                "创造一个物品: 塑界守卫、裂界守卫或征服者地图"
             ]
         },
         new Beast
         {
-            DisplayName = "Farric Lynx Alpha",
+            DisplayName = "大地巨型猞猁",
             Path = "Metadata/Monsters/LeagueBestiary/LynxBestiary",
             Crafts =
             [
-                "Modify Mods on an Item: Add a Suffix, Remove a Random Prefix"
+                "修改物品上的词缀: 添加一个后缀，去除一个随机前缀"
             ]
         },
         new Beast
         {
-            DisplayName = "Craicic Maw",
+            DisplayName = "深海裂齿兽",
             Path = "Metadata/Monsters/LeagueBestiary/FrogBestiary",
             Crafts =
             [
-                "Modify Mods on an Item: Add a Mod to a Shaper Item",
-                "Modify Mods on an Item: Add a Mod to an Elder Item",
-                "Modify Mods on an Item: Add a Mod to a Redeemer Item",
-                "Modify Mods on an Item: Add a Mod to a Hunter Item",
-                "Modify Mods on an Item: Add a Mod to a Crusader Item",
-                "Modify Mods on an Item: Add a Mod to a Warlord Item"
+                "修改物品上的词缀: 给塑界者物品加一个词缀",
+                "修改物品上的词缀: 给裂界者物品加一个词缀",
+                "修改物品上的词缀: 给救赎者物品加一个词缀",
+                "修改物品上的词缀: 给狩猎者物品加一个词缀",
+                "修改物品上的词缀: 给圣战者物品加一个词缀",
+                "修改物品上的词缀: 给督军物品加一个词缀"
             ]
         },
         new Beast
         {
-            DisplayName = "Farric Ape",
+            DisplayName = "大地巨猿",
             Path = "Metadata/Monsters/LeagueBestiary/MonkeyBloodBestiary",
             Crafts =
             [
-                "Create a Unique: Belt"
+                "制作一个传奇: 腰带"
             ]
         },
         new Beast
         {
-            DisplayName = "Primal Cystcaller",
+            DisplayName = "原始囊行",
             Path = "Metadata/Monsters/LeagueHarvest/Blue/HarvestGoatmanT3",
             Crafts =
             [
-                "Gain Atlas Crafts: Gain one of each Atlas Mission"
+                "获得舆图工艺: 获取 5 个奇拉克任务"
             ]
         },
         new Beast
         {
-            DisplayName = "Craicic Savage Crab",
+            DisplayName = "深海野蛮巨蟹",
             Path = "Metadata/Monsters/LeagueBestiary/CrabParasiteLargeBestiary_",
             Crafts =
             [
-                "Create a Unique: Item",
-                "Modify Mods on an Item: Add a Mod to a Rare Map"
+                "制作一个传奇: 物品",
+                "修改物品上的词缀: 给稀有地图加一个词缀"
             ]
         },
         new Beast
         {
-            DisplayName = "Saqawine Vulture",
+            DisplayName = "苍空秃鹰",
             Path = "Metadata/Monsters/LeagueBestiary/VultureBestiary",
             Crafts =
             [
-                "Create an Item: Fully-linked Six-socket Rare"
+                "创造一个物品: 完全六连稀有物品"
             ]
         },
         new Beast
         {
-            DisplayName = "Saqawine Cobra",
+            DisplayName = "苍空眼镜蛇",
             Path = "Metadata/Monsters/LeagueBestiary/SnakeBestiary1",
             Crafts =
             [
-                "Create a Unique: Mace or Sceptre"
+                "制作一个传奇: 锤或短杖",
+                "修改物品上的词缀: 给稀有地图加一个词缀"
             ]
         },
         new Beast
         {
-            DisplayName = "Farric Pit Hound",
+            DisplayName = "大地深邃猎犬",
             Path = "Metadata/Monsters/LeagueBestiary/PitbullBestiary",
             Crafts =
             [
-                "Create an Item: Level 21 Corrupted Gem"
+                "创造一个物品: 等级21的腐化技能石"
             ]
         },
         new Beast
         {
-            DisplayName = "Farric Ursa",
+            DisplayName = "大地巨熊",
             Path = "Metadata/Monsters/LeagueBestiary/DropBearBestiary",
             Crafts =
             [
-                "Create a Unique: Body Armour"
+                "制作一个传奇: 护甲"
             ]
         },
         new Beast
         {
-            DisplayName = "Fenumal Queen",
+            DisplayName = "暗夜女王",
             Path = "Create a Unique: Staff",
             Crafts =
             [
-                "Metadata/Monsters/LeagueBestiary/InsectSpawnerBestiary",
-                "Modify Mods on an Item: Add a Mod to a Redeemer Item"
+                "制作一个传奇: 长杖",
+                "修改物品上的词缀: 给救赎者物品加一个词缀"
             ]
         },
         new Beast
         {
-            DisplayName = "Farric Goliath",
+            DisplayName = "大地针背兽",
             Path = "Metadata/Monsters/LeagueBestiary/BestiarySpiker",
             Crafts =
             [
-                "Create a Unique: Bow",
-                "Modify Mods on an Item: Add a Mod to a Crusader Item"
+                "制作一个传奇: 弓",
+                "修改物品上的词缀: 给圣战者物品加一个词缀"
             ]
         },
         new Beast
         {
-            DisplayName = "Fenumal Devourer",
+            DisplayName = "暗夜吞噬者",
             Path = "Metadata/Monsters/LeagueBestiary/RootSpiderBestiary_",
             Crafts =
             [
-                "Create a Unique: Shield or Quiver",
-                "Modify Mods on an Item: Add a Mod to a Shaper Item"
+                "制作一个传奇: 护盾或箭袋",
+                "修改物品上的词缀: 给塑界者物品加一个词缀"
             ]
         },
         new Beast
         {
-            DisplayName = "Craicic Watcher",
+            DisplayName = "深海守望者",
             Path = "Metadata/Monsters/LeagueBestiary/SquidBestiary",
             Crafts =
             [
-                "Create a Unique: Claw or Dagger",
-                "Modify Mods on an Item: Add a Mod to a Hunter Item"
+                "制作一个传奇: 爪或匕首",
+                "修改物品上的词缀: 给狩猎者物品加一个词缀"
             ]
         },
         new Beast
         {
-            DisplayName = "Saqawine Chimeral",
+            DisplayName = "苍空奇美拉",
             Path = "Metadata/Monsters/LeagueBestiary/IguanaBestiary",
             Crafts =
             [
-                "Create Currency Items: A Stack of 10 Random Currency"
+                "创造通货物品: 一叠10个的随机通货物品"
             ]
         },
         new Beast
         {
-            DisplayName = "Farric Magma Hound",
+            DisplayName = "大地熔岩猎犬",
             Path = "Metadata/Monsters/LeagueBestiary/HoundBestiary",
             Crafts =
             [
-                "Create an Item: 23% Quality Corrupted Gem"
+                "创造一个物品: 品质 23% 的腐化技能石"
             ]
         },
         new Beast
         {
-            DisplayName = "Farric Taurus",
+            DisplayName = "大地石肌牛",
             Path = "Metadata/Monsters/LeagueBestiary/BestiaryBull",
             Crafts =
             [
-                "Create a Unique: Map"
+                "制作一个传奇: 地图"
             ]
         },
         new Beast
         {
-            DisplayName = "Craicic Squid",
+            DisplayName = "深海墨鱼",
             Path = "Metadata/Monsters/LeagueBestiary/SeaWitchSpawnBestiary",
             Crafts =
             [
-                "Create a Rare: Talisman"
+                "制作一个稀有: 魔符"
             ]
         },
         new Beast
         {
-            DisplayName = "Craicic Shield Crab",
+            DisplayName = "深海附壳巨蟹",
             Path = "Metadata/Monsters/LeagueBestiary/ShieldCrabBestiary",
             Crafts =
             [
-                "Create Currency Items: A Stack of 4 Jeweller's Orbs",
-                "Create Currency Items: A Stack of 2 Orbs of Binding"
+                "创造通货物品: 一叠4个的工匠石",
+                "创造通货物品: 一叠二件装绑定石",
+                "修改一件物品: 拥有最大可能的插槽数量"
             ]
         },
         new Beast
         {
-            DisplayName = "Craicic Sand Spitter",
+            DisplayName = "深海喷砂爪蟹",
             Path = "Metadata/Monsters/LeagueBestiary/SandSpitterBestiary",
             Crafts =
             [
-                "Create Currency Items: Orb of Fusing",
-                "Create Currency Items: A Stack of 2 Orbs of Binding"
+                "创造通货物品: 链结石",
+                "创造通货物品: 一叠二件装绑定石",
+                "修改一件物品: 拥有最大可能的链接"
             ]
         },
         new Beast
         {
-            DisplayName = "Fenumal Widow",
+            DisplayName = "暗夜黑寡妇",
             Path = "Metadata/Monsters/LeagueBestiary/Spider5Bestiary",
             Crafts =
             [
-                "Create a Unique: Gloves"
+                "制作一个传奇: 手套"
             ]
         },
         new Beast
         {
-            DisplayName = "Saqawine Rhoa",
+            DisplayName = "苍空恐喙鸟",
             Path = "Metadata/Monsters/LeagueBestiary/RhoaBestiary",
             Crafts =
             [
-                "Create Currency Items: A Stack of 8 Chromatic Orbs"
+                "创造通货物品: 一叠8个的幻色石"
             ]
         },
         new Beast
         {
-            DisplayName = "Fenumal Scorpion",
+            DisplayName = "暗夜毒蝎",
             Path = "Metadata/Monsters/LeagueBestiary/BlackScorpionBestiary",
             Crafts =
             [
-                "Corrupt an Item: Double Corrupt a Map",
-                "Convert this Unique Item: Into Another Random Unique Item"
+                "转换这个传奇物品: 变成一个随机传奇物品",
+                "腐化一张地图: 两次"
             ]
         },
         new Beast
         {
-            DisplayName = "Farric Flame Hellion Alpha",
+            DisplayName = "大地烈炎地狱巨犬",
             Path = "Metadata/Monsters/LeagueBestiary/HellionBestiary",
             Crafts =
             [
-                "Create a Unique: Ring"
+                "制作一个传奇: 戒指"
             ]
         },
         new Beast
         {
-            DisplayName = "Farric Chieftain",
+            DisplayName = "大地酋长",
             Path = "Metadata/Monsters/LeagueBestiary/BestiaryMonkeyChiefBlood",
             Crafts =
             [
-                "Create a Unique: Amulet"
+                "制作一个传奇: 项链"
             ]
         },
         new Beast
         {
-            DisplayName = "Saqawine Retch",
+            DisplayName = "苍空反刍鸟",
             Path = "Metadata/Monsters/LeagueBestiary/KiwethBestiary",
             Crafts =
             [
-                "Create a Unique: Boots"
+                "制作一个传奇: 鞋子"
             ]
         },
         new Beast
         {
-            DisplayName = "Farric Goatman",
+            DisplayName = "大地羊人",
             Path = "Metadata/Monsters/LeagueBestiary/GoatmanLeapSlamBestiary",
             Crafts =
             [
-                "Create a Unique: Flask"
+                "制作一个传奇: 药剂"
             ]
         },
         new Beast
         {
-            DisplayName = "Saqawine Blood Viper",
+            DisplayName = "苍空毒血蛇",
             Path = "Metadata/Monsters/LeagueBestiary/SnakeBestiary2",
             Crafts =
             [
-                "Create a Unique: Sword or Axe",
-                "Modify Mods on an Item: Add a Mod to an Elder Item"
+                "制作一个传奇: 剑类或斧类",
+                "修改物品上的词缀: 给裂界者物品加一个词缀"
             ]
         },
         new Beast
         {
-            DisplayName = "Fenumal Scrabbler",
+            DisplayName = "暗夜收割者",
             Path = "Metadata/Monsters/LeagueBestiary/SandLeaperBestiary",
             Crafts =
             [
-                "Create a Unique: Wand",
-                "Modify Mods on an Item: Add a Mod to a Warlord Item"
+                "制作一个传奇: 法杖",
+                "修改物品上的词缀: 给督军物品加一个词缀"
             ]
         },
         new Beast
         {
-            DisplayName = "Farric Gargantuan",
+            DisplayName = "大地野兽",
             Path = "Metadata/Monsters/LeagueBestiary/BeastCaveBestiary",
             Crafts =
             [
-                "Create Currency Items: A Stack of 3 Orbs of Horizons",
-                "Create a Unique: Helmet"
+                "制作一个传奇: 头盔",
+                "创造通货物品: 一叠三件装平行石"
             ]
         }
     };
