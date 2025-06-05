@@ -169,7 +169,9 @@ public partial class Beasts
 
         var beasts = bestiary.CapturedBeastsPanel.CapturedBeasts;
         var bestiaryTopRight = new Vector2(bestiary.GetClientRect().TopRight.X, bestiary.GetClientRect().TopRight.Y);
-        Graphics.DrawText($"Beasts: {beasts.Count}", bestiaryTopRight, Color.White, FontAlign.Right);
+        Graphics.DrawText($"野兽: {beasts.Count}", bestiaryTopRight, Color.White, FontAlign.Right);
+        return;
+        
         foreach (var beast in beasts)
         {
           /*if (!beast.IsVisible)
